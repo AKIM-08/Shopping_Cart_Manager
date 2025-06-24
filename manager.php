@@ -9,8 +9,8 @@ while(true){
     $prix = (int) readline('Entrez le prix unitaire :');
     $quantite = (int) readline('Entrez la quantité :');
 
-    while ($prix > 20000 || $quantite > 50){
-        echo "Prix unitaire ou quantite invalide (assurez vous que le prix ne dépasse pas la somme de 20000 et que la quantié ne soit pas supérieur à 50)\n";
+    while ($prix > 1000 || $quantite > 20){
+        echo "Prix unitaire ou quantite invalide (assurez vous que le prix ne dépasse pas la somme de 1000 et que la quantié ne soit pas supérieur à 20)\n";
             if ($prix > 1000){
                 $prix = (int) readline('Entrez le prix unitaire :');
             } elseif ($quantite > 20){
